@@ -58,8 +58,8 @@ data class Article(
         } catch (ex: Exception) {
             ""
         }
-
     }
+
 }
 
 

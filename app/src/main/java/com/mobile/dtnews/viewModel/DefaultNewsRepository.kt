@@ -30,7 +30,7 @@ class DefaultNewsRepository(private val api: ServiceApi) : NewsRepository {
         }.flow
 
     companion object {
-        const val apiKey = "5bafcf68425c413ba4f232121a0baa27"
+        const val apiKey = "3422415552cc4fcbb8c723089e0c88ca"
     }
 
 }

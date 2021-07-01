@@ -54,7 +54,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:layout_marginStart="8dp"
-            android:text="@{article.desc}"
+            android:text="@{article.content}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ivArticle"
