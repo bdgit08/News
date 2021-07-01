@@ -2,6 +2,9 @@
     <string name="app_name">News</string>
     <string name="try_again">Try Again</string>
     <string name="no_internet"> Internet Connection is not Available </string>
+    <string name="error_429">Request limited, 50 requests available every 12 hours</string>
+    <string name="error_500">Server Error</string>
+    <string name="error_401">Unauthorized, Api key is Missing</string>
     <string name="business">Business</string>
     <string name="entertainment">Entertainment</string>
     <string name="general">General</string>

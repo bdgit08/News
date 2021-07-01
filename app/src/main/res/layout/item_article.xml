@@ -36,6 +36,18 @@
             tools:text="News" />
 
         <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="07 - 05 -2021"
+            android:text="@{article.date}"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/ivArticle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+        <TextView
             android:id="@+id/tvDesc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -46,7 +58,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ivArticle"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate"
             tools:text="@tools:sample/lorem/random" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,9 @@
 package com.mobile.dtnews.model
 
 import com.squareup.moshi.Json
+import java.lang.Exception
+import java.text.SimpleDateFormat
+import java.util.*
 
 data class SourceResult(
     @field:Json(name = "status")
@@ -45,7 +48,19 @@ data class Article(
     var url: String,
     @field:Json(name = "source")
     var source: Source
-)
+){
+    fun getDate() : String{
+        return try {
+            val sdf = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.getDefault())
+            val sdfOutput = SimpleDateFormat("yyyy-MM-dd", Locale("in"))
+            val dInput = sdf.parse(publishedAt)
+            sdfOutput.format(dInput)
+        } catch (ex: Exception) {
+            ""
+        }
+
+    }
+}
 
 
 sealed class Result<out T : Any> {
